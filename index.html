@@ -1,71 +1,260 @@
-<!DOCTYPE  html>
+<!DOCTYPE html>
 <html lang="eng">
-    <head>
-        <meta charset="UTf-8" />
-        <meta name="viewport" content="width=device-width, initial scale=1" />
-        <title>Jadoo</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <link href="styles/styles.css" rel="stylesheet" type="text/css" />
-        <script src="scripts/main.js"></script>
-        <linkhref="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
-    </head>
-    <body>
-        <header class=" opensans  container mx-auto py-[34px] px-[140px] flex justify-around items-center gap-x-[100px]  z-[1]">
-               <img class="mb-4" src="images/Logo.png" alt="jadoo logo"/>
-               <nav class=" items-center text-[#212832] flex gap-x-[55px] relative ">
-                <a class="hover:text-[#FA4A0C] transition duration-300 font-medium" href="#">Destinations</a>
-                <a class="hover:text-[#FA4A0C] transition duration-300 font-medium" href="#">Hotels</a>
-                <a class="hover:text-[#FA4A0C] transition duration-300 font-medium" href="#">Flights</a>
-                <a class="hover:text-[#FA4A0C] transition duration-300 font-medium" href="#">Bookings</a>
-                <a class="hover:text-[#FA4A0C] transition duration-300 font-semibold" href="#">Log in</a>
-                <button class="hover:bg-[#FA4A0C] hover:text-[#Ffffff] hover:border-[#FA4A0C] transition duration-300 px-[20px] py-[3px] font-semibold border rounded-[5px] border-[#212832] bg-transparent  ">
-                    Sign up
-                </button> 
-                <div class="flex relative group flex-col items-center">               
-                <a class="hover:text-[#FA4A0C]  transition duration-300 font-medium cursor-pointer items-center"> EN </a>
-                    <ul class="  justify-center text-center flex-col absolute hidden mt-2 group-hover:block  px-3 py-3 cursor-pointer font-medium bg-[#FFF1DA] rounded-[5px] border  border-[#212832]">
-                        <li<a class="hover:text-[#FA4A0C]" href="#">English</a></li>
-                        <li<a class="hover:text-[#FA4A0C]" href="#">Russian</a></li>
-                        <li<a class="hover:text-[#FA4A0C]"href="#">Uzbek</a></li>
-                    </ul>
-                
-                </div>
-              </nav>
-        </header>
 
-        <img class="   absolute z-[-10] flex mx-[50%] my-[-200px] " src="images/Decore.png" alt="bg decor"/>
+<head>
+    <meta charset="UTf-8" />
+    <meta name="viewport" content="width=device-width, initial scale=1" />
+    <title>Jadoo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="styles/styles.css" rel="stylesheet" type="text/css" />
+    <script src="scripts/main.js"></script>
+    <linkhref="https: //cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
 
-         <section class="container mx-auto">
-            
-            <img class="z-[1] ml-[42%]" src="images/Traveller 1.png"/>
-            <img class="z-[1] ml-[52%] mt-[-725px]" src="images/plane.png"/>
-            <img class="z-[1] ml-[91%] mt-[-100px]"  src="images/plane.png"/>
+<body>
+    <header
+        class=" text-[17px] opensans  container mx-auto py-[34px] px-[140px] flex justify-around items-center gap-x-[155px]  z-[1]">
+        <img class="mb-4" src="images/Logo.png" alt="jadoo logo" />
+        <nav class=" items-center text-[#212832] flex gap-x-[40px] relative ">
+            <a class="hover:text-[#FA4A0C] transition duration-300 font-medium" href="#">Destinations</a>
+            <a class="hover:text-[#FA4A0C] transition duration-300 font-medium" href="#">Hotels</a>
+            <a class="hover:text-[#FA4A0C] transition duration-300 font-medium" href="#">Flights</a>
+            <a class="hover:text-[#FA4A0C] transition duration-300 font-medium" href="#">Bookings</a>
+            <a class="hover:text-[#FA4A0C] transition duration-300 font-semibold" href="#">Log in</a>
+            <button
+                class="hover:bg-[#FA4A0C] hover:text-[#Ffffff] hover:border-[#FA4A0C] transition duration-300 px-[20px] py-[3px] font-semibold border rounded-[5px] border-[#212832] bg-transparent  ">
+                Sign up
+            </button>
+            <div class="flex relative group flex-col items-center">
+                <a
+                    class="hover:text-[#FA4A0C]  relative transition duration-300 font-medium cursor-pointer items-center px-2 py-2">
+                    EN </a>
+                <ul
+                    class="  justify-center text-center top-[80%] flex-col absolute hidden mt-2 group-hover:block  px-3 py-3 cursor-pointer font-medium bg-[#FFF1DA] rounded-[5px] border  border-[#212832]">
+                    <li><a class="hover:text-[#FA4A0C]" href="#">English</a></li>
+                    <li><a class="hover:text-[#FA4A0C]" href="#">Russian</a></li>
+                    <li><a class="hover:text-[#FA4A0C]" href="#">Uzbek</a></li>
+                </ul>
 
-            <div class="w-2/3 max-h-2/3  px-[120px] mt-[-170px] leading-tight tracking-tight">
+            </div>
+        </nav>
+    </header>
+
+    <img class="   absolute z-[-10] flex top-0 right-0" src="images/Decore.png" alt="bg decor" />
+
+    <section class="container  mx-auto pb-40 ">
+
+        <div class="px-20 pt-40 max-w-[715px] w-full  leading-tight tracking-tight">
             <h3 class="uppercase poppins text-[#DF6951] text-[20px] font-bold">Best Destinations around the world</h3>
-            <h1 class="volkhov text-[#181E4B] text-[80px] font-bold text-left">Travel, enjoy and live a new and full life</h1>
-            <h4 class="poppins text-[#5E6282] text-[16px] font-normal text-left">Built Wicket longer admire do barton vanity itself do in it. 
-            Preferred to sportsmen it engrossed listening. 
-            Park gate sell they west hard for the </h4>
+            <h1 class="volkhov text-[#181E4B] text-[80px] font-bold text-left">Travel, enjoy and live a new and full
+                life</h1>
+            <h4 class="poppins text-[#5E6282] text-[16px] font-normal text-left">Built Wicket longer admire do barton
+                vanity itself do in it.
+                Preferred to sportsmen it engrossed listening.
+                 Park gate sell they west hard for the 
+            </h4>
+        </div>
+        <div class="flex items-center py-8 px-20 gap-x-11 ">
+            <button
+                class=" transition duration-300 hover:bg-[#eabc59] opensans font-medium text-[18px] rounded-[10px] bg-[#F1A501] text-[#ffff] px-[30px] py-[17px]">
+                Find out more
+            </button>
+            <button class="transition duration-300 rounded-full bg-[#DF6951] px-[23px] py-[23px] hover:bg-[#f0745c]">
+                <img src="images/Polygon 1.png" />
+            </button>
+            <p class="text-[#686D77] poppins font-medium text-[17px]">Play Demo</p>
+        </div>
+                <div class="justify-end relative  flex max-w-1/2 w-full ">
+                    <img class="z-[1]  absolute bottom-[-145px] left-[526px] " src="images/Traveller 1.svg" />
+                    <img class="z-[-5] absolute bottom-[410px]  left-[660px]  " src="images/plane.svg" />
+                    <img class="z-[-5] absolute bottom-[365px] left-[1155px]" src="images/plane.svg" />
+                </div>
+                <img class=" absolute z-[-20] top-0 right-0" src="images/Decore2org.png" />
+                
+
+    </section>
+
+    <section class="container mx-auto mt- ">
+   
+        <h3 class="uppercase poppins text-[18px] text-[#5E6282] font-semibold text-center">category</h3>
+        <h2 class=" flex justify-center items-center volkhov text-[50px] text-[#14183E] text-center font-bold">We Offer Best Services</h2>
+    
+    <div class=" z-[-1] flex justify-end relative bottom-[100px] right-0 ">
+        <img   src="images/pluses.png" />
+    </div>
+    
+        <div class="px-20 pb-32 ">
+            <div class="  grid grid-cols-4 gap-9  ">
+                <div class="p-6 text-center flex flex-col items-center rounded-[36px] shad ">
+                    <img class="mx-auto mb-4 object-contain h-24" src="images/plate 48.svg" />
+                    <h3 class=" mb-2 font-semibold opensans text-[18px] text-[#1E1D4C]">Calculated Weather </h3>
+                    <h4 class=" mb-2 poppins text text-[#959BAA]">Built Wicket longer admire do barton vanity
+                        itself do in it.</h4>
+                </div>
+                <div class="p-6 text-center flex flex-col items-center rounded-[36px] shad">
+                    <img class="mx-auto mb-4 object-contain h-24" src="images/PLANE 51.svg  " />
+                    <h3 class=" mb-2 font-semibold opensans text-[18px] text-[#1E1D4C]">Best Flights</h3>
+                    <h4 class="  mb-2 poppins text text-[#959BAA]">Engrossed listening. Park gate sell they west
+                        hard for the.</h4>
+                </div>
+                <div class="p-6 text-center flex flex-col items-center rounded-[36px] shad ">
+                    <img class="mx-auto mb-4 object-contain h-24" src="images/mic 50.svg" />
+                    <h3 class="mb-2 font-semibold opensans text-[18px] text-[#1E1D4C]">Local Events </h3>
+                    <h4 class="mb-2 poppins text text-[#959BAA]">Barton vanity itself do in it. Preferd to men
+                        it engrossed listening. </h4>
+                </div>
+                <div class="p-6 text-center flex flex-col items-center rounded-[36px] shad">
+                    <img class="mx-auto mb-4 object-contain h-24" src="images/GEar 49.svg  " />
+                    <h3 class="mb-2 font-semibold opensans text-[18px] text-[#1E1D4C]">Customization</h3>
+                    <h4 class="mb-2 poppins text text-[#959BAA]">We deliver outsourced aviation services for
+                        military customers</h4>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="container mx-auto p-6">
+        <h3 class="poppins text-[18px] text-[#5E6282] font-semibold text-center">Top Selling</h3>
+        <h2 class="volkhov text-[50px] text-[#14183E] text-center font-bold">Top Destinations</h2>
+        <div class="px-20 pb-32 pt-16">
+            <div class="grid grid-cols-3 gap-16">
+                <div class="text-center  rounded-[21px] overflow-hidden shads">
+                    <img class="object-cover w-full" src="images/rome.png" />
+                    <div class="px-5 py-5 poppins">
+                        <div class="flex items-center justify-between text-[#5E6282] text-[18px]">
+                            <p>Rome, Italy</p>
+                            <p>$5,42k</p>
+                        </div>
+                        <div class="flex items-center mt-4 gap-x-2 text-[#5E6282] ">
+                            <img src="images/navigation 1.svg" />
+                            <p>10 Days Trip</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center  rounded-[21px] overflow-hidden shads">
+                    <img class="object-cover w-full " src="images/ff6f71a7522170940c3ac66332ac8d2f.png" />
+                    <div class="px-5 py-5 poppins">
+                        <div class="flex items-center justify-between text-[#5E6282] text-[18px]">
+                            <p>London, UK</p>
+                            <p>$4,2k</p>
+                        </div>
+                        <div class="flex items-center mt-4 gap-x-2 text-[#5E6282] ">
+                            <img src="images/navigation 1.svg" alt="navigation" />
+                            <p>12 Days Trip</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center rounded-[21px] overflow-hidden shads">
+                    <img class="object-cover w-full " src="images/europe.png" />
+                    <div class="p-5 poppins">
+                        <div class="flex items-center justify-between text-[#5E6282] text-[18px]">
+                            <p>Full Europe</p>
+                            <p>$15k</p>
+                        </div>
+                        <div class="flex items-center mt-4 gap-x-2 text-[#5E6282] ">
+                            <img src="images/navigation 1.svg" />
+                            <p>28 Days Trip</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto px-20">
+        <div class="w-full max-w-[560px] leading-tight">
+            <h3 class="poppins text-[18px] text-[#5E6282] font-semibold text-left">Easy and Fast</h3>
+            <h2 class="volkhov text-[50px] text-[#14183E] text-left font-bold">Book Your Next Trip In 3 Easy Steps </h2>
+        </div>
+        <div class="flex ">
+            <div class="flex flex-col ">
+                <div class="flex items-center  py-4     gap-5">
+                    <div class="  flex items-center justify-center ">
+                        <img src="images/Group 7.svg" alt="yellow icon" />
+                    </div>
+                    <div class="w-1/3 leading-tight">
+                        <h3 class="font-bold  text-[#5E6282]">Choose Destination</h3>
+                        <p class="text-[#5E6282]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor
+                            tempus.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center  py-4 gap-5">
+                    <div class="  flex items-center justify-center ">
+                        <img src="images/Group 12.svg" alt="red icon" />
+                    </div>
+                    <div class="w-1/3 leading-tight">
+                        <h3 class="font-bold  text-[#5E6282]">Make Payment </h3>
+                        <p class="text-[#5E6282]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor
+                            tempus.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center  py-4 gap-5">
+                    <img src="images/Group 11.svg" alt="aquamarine icon" />
+                    <div class="w-1/3 leading-tight">
+                        <h3 class="font-bold text-[#5E6282]">Make Payment </h3>
+                        <p class="text-[#5E6282]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor
+                            tempus.
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <img class=" absolute z-[-20] mt-[-260px] ml-[25%]" src="images/Decore2org.png"/>
-            
-            <div class="flex items-center py-10 px-[120px] gap-x-11 ">
-             <button class=" transition duration-300 hover:bg-[#eabc59] opensans font-medium text-[18px] rounded-[10px] bg-[#F1A501] text-[#ffff] px-[30px] py-[17px]">
-                Find out more 
-             </button>
-             <button class="transition duration-300 rounded-full bg-[#DF6951] px-[23px] py-[23px] hover:bg-[#f0745c]"  >
-                <img src="images/Polygon 1.png"/>
-             </button>
-             <p class="text-[#686D77] poppins font-medium">Play Demo</p>
 
 
+            <div class="justify-center flex-col flex -mt-[80px] h-full  relative rounded-[26px] shadblue ">
+                <div class="p-6">
+                    <img class="object-cover rounded-[26px] w-full " src="images/greece.png" />
+                </div>
+                <div class="px-6">
+                    <p class="poppins text-[18px] font-medium">Trip To Greece</p>
+                </div>
+                <div class="px-6 py-3">
+                    <p class="poppins text-[#84829A]">14-29 June | by Robbin</p>
+                </div>
+                <div class="px-6 py-1 gap-3 flex">
+                    <button>
+                        <img src="images/LEAF.svg" />
+                    </button>
+                    <button>
+                        <img src="images/map icon.svg" />
+                    </button>
+                    <button>
+                        <img src="images/send.svg" />
+                    </button>
+                </div>
+                <div class="px-6 py-4 flex justify-between ">
+                    <div class="flex gap-3 items-baseline ">
+                        <img src="./images/building 1.svg" alt="">
+                        <p class="poppins text-[#84829A]">24 people going </p>
+                    </div>
+                    <div>
+                        <img src="images/heart.svg" />
+                    </div>
+                </div>
 
+                <div class="rounded-[18px] bg-white shadblack flex absolute bottom-14 -right-28">
+                    <img class="p-5" src="images/absicon.svg" />
+                    <div class="px-3 py-4 poppins">
+                        <p class="text-[#84829A] font-medium">Ongoing</p>
+                        <p class="font-medium text-[18px]">Trip to Rome</p>
+                        <div class="flex gap-1">
+                            <p class=" text-[#887adb]">40%</p>
+                            <p class="font-medium ">completed</p>
+                        </div>
+                        <img class="py-3" src="images/loading 3.svg" />
+                    </div>
+                </div>
             </div>
 
-     </section>
+        </div>
+    </section>
+</body>
 
-
-    </body>
 </html>
