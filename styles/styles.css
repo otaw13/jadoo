@@ -31,11 +31,13 @@
   box-shadow: 0px 8px 7px -6px rgba(0, 0, 0, 0.5);
 }
 
-.shadblue {
-  box-shadow: 60px -75px 300px -12px rgba(89, 176, 230, 0.465);
-}
+
 .shadblack {
   box-shadow: 10px 50px 295px -41px rgba(0, 0, 0, 0.6);
+}
+
+.shadblue {
+  box-shadow: 60px -75px 300px -12px rgba(89, 176, 230, 0.465);
 }
 
 .shadbnb {
@@ -61,7 +63,7 @@
 }
 
 .swiper-pagination-bullet-active {
-  
+
   background-color: #14183E !important;
   width: 12px !important;
   height: 12px !important; 
@@ -87,7 +89,12 @@
   transform: translateX(0);
 }
 
-
+.cswiper-pagination {
+  display: flex ;
+  align-items: center !important; 
+ justify-content: center !important;
+  
+}
   
 /* .sectionSW
 .sectionBody{
