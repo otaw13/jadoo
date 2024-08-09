@@ -27,10 +27,10 @@
                     <a href="index_uz.html" class="hover:bg-[#c7ab7f] block py-2.5 px-4 ">UZ</a>
                 </div>
             </div>
-            <a href="#Destination" class="block py-2.5 px-4 hover:bg-[#c7ab7f]">Destinations</a>
-            <a href="#Hotels" class="block py-2.5 px-4 hover:bg-[#c7ab7f]">Hotels</a>
-            <a href="#Flights" class="block py-2.5 px-4 hover:bg-[#c7ab7f]">Flights</a>
-            <a href="#Bookings" class="block py-2.5 px-4 hover:bg-[#c7ab7f]">Bookings</a>
+            <a href="#Destination" class="block py-2.5 px-4 hover:bg-[#c7ab7f]"  onclick="closeSidebar()">Destinations</a>
+            <a href="#Hotels" class="block py-2.5 px-4 hover:bg-[#c7ab7f]"  onclick="closeSidebar()">Hotels</a>
+            <a href="#Flights" class="block py-2.5 px-4 hover:bg-[#c7ab7f]"  onclick="closeSidebar()">Flights</a>
+            <a href="#Bookings" class="block py-2.5 px-4 hover:bg-[#c7ab7f]"  onclick="closeSidebar()">Bookings</a>
             <a href="#" class="block py-2.5 px-4 hover:bg-[#c7ab7f]">Log in</a>
             <button class=" w-full py-2.5 px-4 text-left hover:bg-[#c7ab7f] ">Sign
                 up</button>
@@ -709,6 +709,10 @@
             document.getElementById('mySidebar').classList.remove('translate-x-0');
             document.getElementById('mySidebar').classList.add('translate-x-full');
         }
+
+        document.querySelectorAll('#sidebar nav a').forEach(link => {
+    link.addEventListener('click', closeSidebar);
+  });
     </script>
 
 </body>
