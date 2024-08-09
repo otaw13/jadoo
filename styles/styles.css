@@ -36,9 +36,8 @@
   box-shadow: 10px 50px 295px -41px rgba(0, 0, 0, 0.6);
 }
 
-.shadblue {
-  box-shadow: 60px -75px 300px -12px rgba(89, 176, 230, 0.465);
-}
+
+
 
 .shadbnb {
   box-shadow: -4px 36px 95px -18px rgba(0,0,0,0.27);  
@@ -81,7 +80,7 @@
 }
 
 .sidebar {
-  transform: translateX(-100%);
+  transform: translateX(100%);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -95,7 +94,18 @@
  justify-content: center !important;
   
 }
+
+
   
+@media not all and (min-width: 768px) {
+  .rblock {
+    height: calc(100% - 140.31px)!important;
+  }
+    
+  
+}
+
+
 /* .sectionSW
 .sectionBody{
   position: relative;

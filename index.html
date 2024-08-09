@@ -17,25 +17,23 @@
 
 
     <div id="mySidebar"
-        class="fixed left-0 bg-[#fef1dc] text-[#212832] max-sm:w-full w-1/3 transform -translate-x-full transition-transform duration-300 h-full overflow-auto z-50">
+        class="fixed right-0 border-[#c7ab7f] border-[2px] bg-[#fef1dc] text-[#212832] max-sm:w-full w-1/3 transform translate-x-full transition-transform duration-300 h-full overflow-auto z-50">
         <button onclick="closeSidebar()" class="absolute top-4 right-4 text-2xl">&times;</button>
         <nav class="mt-16">
-            <a href="#hover" class="block py-2.5 px-4 hover:bg-[#c7ab7f]">Destinations</a>
-            <a href="#" class="block py-2.5 px-4 hover:bg-[#c7ab7f]">Hotels</a>
-            <a href="#" class="block py-2.5 px-4 hover:bg-[#c7ab7f]">Flights</a>
-            <a href="#" class="block py-2.5 px-4 hover:bg-[#c7ab7f]">Bookings</a>
-            <a href="#" class="block py-2.5 px-4 hover:bg-[#c7ab7f]">Log in</a>
-            <button
-                class="block w-full py-2.5 px-4 text-left hover:bg-orange-600 border border-gray-700 rounded mt-2">Sign
-                up</button>
-            <div class="mt-4">
+            <div class="items-center  flex mt-4">
                 <a class="block py-2.5 px-4 hover:bg-[#c7ab7f] cursor-pointer">EN</a>
-                <ul class="hidden group-hover:block bg-gray-800 mt-1 border border-gray-700 rounded">
-                    <li><a href="#" class="block py-2.5 px-4 hover:bg-gray-700">English</a></li>
-                    <li><a href="index_ru.html" class="block py-2.5 px-4 hover:bg-gray-700">Russian</a></li>
-                    <li><a href="index_uz.html" class="block py-2.5 px-4 hover:bg-gray-700">Uzbek</a></li>
-                </ul>
+                <div class="flex justify-center items-center mt- ">
+                    <a href="index_ru.html" class="hover:bg-[#c7ab7f] block py-2.5 px-4 ">RU</a>
+                    <a href="index_uz.html" class="hover:bg-[#c7ab7f] block py-2.5 px-4 ">UZ</a>
+                </div>
             </div>
+            <a href="#Destination" class="block py-2.5 px-4 hover:bg-[#c7ab7f]">Destinations</a>
+            <a href="#Hotels" class="block py-2.5 px-4 hover:bg-[#c7ab7f]">Hotels</a>
+            <a href="#Flights" class="block py-2.5 px-4 hover:bg-[#c7ab7f]">Flights</a>
+            <a href="#Bookings" class="block py-2.5 px-4 hover:bg-[#c7ab7f]">Bookings</a>
+            <a href="#" class="block py-2.5 px-4 hover:bg-[#c7ab7f]">Log in</a>
+            <button class=" w-full py-2.5 px-4 text-left hover:bg-[#c7ab7f] ">Sign
+                up</button>
         </nav>
     </div>
 
@@ -44,10 +42,10 @@
         class="px-5 text-[17px] opensans max-w-full container mx-auto sm:px-14 md:px-14 lg:px-14 py-[34px] gap-20 flex lg:justify-around justify-between items-center">
         <img class="mb-4 max-w-[120px]" src="images/Logo.png" alt="jadoo logo" />
         <nav class="hidden items-center text-[#212832] lg:flex gap-[40px] relative">
-            <a class="hover:text-[#FA4A0C] transition duration-300 font-medium" href="#">Destinations</a>
-            <a class="hover:text-[#FA4A0C] transition duration-300 font-medium" href="#">Hotels</a>
-            <a class="hover:text-[#FA4A0C] transition duration-300 font-medium" href="#">Flights</a>
-            <a class="hover:text-[#FA4A0C] transition duration-300 font-medium" href="#">Bookings</a>
+            <a class="hover:text-[#FA4A0C] transition duration-300 font-medium" href="#Destination">Destinations</a>
+            <a class="hover:text-[#FA4A0C] transition duration-300 font-medium" href="#Hotels">Hotels</a>
+            <a class="hover:text-[#FA4A0C] transition duration-300 font-medium" href="#Flights">Flights</a>
+            <a class="hover:text-[#FA4A0C] transition duration-300 font-medium" href="#Bookings">Bookings</a>
             <a class="hover:text-[#FA4A0C] transition duration-300 font-semibold" href="#">Log in</a>
             <button
                 class="hover:bg-[#FA4A0C] hover:text-[#ffffff] hover:border-[#FA4A0C] transition duration-300 px-[20px] py-[3px] font-semibold border rounded-[5px] border-[#212832] bg-transparent">
@@ -76,7 +74,7 @@
     <img class=" max-md:w-[70%]  absolute z-[-10] flex top-0  right-0 object-cover " src="images/Decore.png"
         alt="bg decor" />
 
-    <section class="container  mx-auto pb-40 " id="hover">
+    <section class="container  mx-auto  max-lg:pb-40 xl:pb-40 ">
 
         <div
             class="p-4 sm:px-8 md:px-12 lg:px-20 xl:px-20 sm:pt-8 md:pt-16 lg:pt-30  lg:w-[725px] flex flex-col lg:items-start md:items-center flex-nowrap  leading-tight">
@@ -96,9 +94,9 @@
         </div>
 
         <div
-            class=" flex  lg:items-start max-lg:justify-center max-md:justify-around py-8  p-8 sm:p-12 md:px-16 lg:px-20 gap-6 md:gap-x-12 lg:gap-x-6 max-w-full ">
+            class=" flex  lg:items-start max-lg:justify-center     p2 sm:p-12 md:px-16 lg:px-20 gap-8 md:gap-x-10 lg:gap-x-11 max-w-full ">
             <button
-                class=" transition duration-300 hover:bg-[#eabc59] opensans font-medium text-[18px] rounded-[10px] bg-[#F1A501] text-[#ffff]  px-[15px] py-[13px] md:px-[22px] md:py-[15px] lg:px-[30px] lg:py-[17px]">
+                class=" transition duration-300 hover:bg-[#eabc59] opensans font-medium text-[18px] rounded-[10px] bg-[#F1A501] text-[#ffff]  px-[12px] py-[10px] md:px-[22px] md:py-[15px] lg:px-[30px] lg:py-[17px]">
                 Find out more
             </button>
             <div
@@ -109,22 +107,22 @@
                 <p class="text-[#686D77] poppins font-medium text-[17px]">Play Demo</p>
             </div>
         </div>
-        <div class="md:justify-center  lg:justify-end relative  flex w-1/3  lg:w-[50%] xl:w-full ">
-            <img class="z-[1]   absolute left-[100%]  md:left-[250px]  lg:bottom-[0px] lg:left-[525px] xl:bottom-[-250px] xl:left-[515px] "
+        <div class="justify-center  flex  lg:justify-end relative  w-[40%]  lg:w-[50%] xl:w-full  ">
+            <img class="z-[1]   absolute   left-[70%] max-lg:-bottom-[255px] max-md:-bottom-[220px] max-sm:-bottom-[200px] lg:bottom-[0px] lg:left-[525px] xl:bottom-[-220px] xl:left-[515px] "
                 src="images/trv.svg" />
         </div>
 
 
     </section>
 
-    <section class="container mx-auto ">
-        <div class="pt-20 max-lg:pb-20">
+    <section class="container mx-auto " id="Hotels">
+        <div class="py-20 max-lg:pb-20 relative">
             <h3 class="uppercase poppins text-[18px] text-[#5E6282] font-semibold text-center">category</h3>
             <h2
                 class=" flex justify-center items-center volkhov text-[28px] sm:text-[30px] md:text-[40px] lg:text-[50px] text-[#14183E] text-center font-bold">
                 We
                 Offer Best Services</h2>
-            <div class=" z-[-1] justify-end relative bottom-[100px] right-[0px] lg:flex hidden ">
+            <div class=" z-[-1] justify-end absolute -bottom-14 right-[0px] lg:flex hidden ">
                 <img src="images/pluses.png" />
             </div>
         </div>
@@ -168,9 +166,12 @@
                 </div>
             </div>
 
-            <div class="text-[#14183E] mobswiper-button-prev swiper-button-prev left-0 justify-start "></div>
+            <div
+                class="text-[#14183E] mobswiper-button-prev swiper-button-prev left-0 max-sm:left-[15%] justify-start ">
+            </div>
 
-            <div class="text-[#14183E] mobswiper-button-next swiper-button-next right-0  justify-end"></div>
+            <div class="text-[#14183E] mobswiper-button-next swiper-button-next right-0 max-sm:right-[15%] justify-end">
+            </div>
 
         </div>
 
@@ -209,11 +210,11 @@
 
 
     <section class="container mx-auto p-6">
-        <h3 class="poppins text-[18px] text-[#5E6282] font-semibold text-center">Top Selling</h3>
+        <h3 id="Destination" class="poppins text-[18px] text-[#5E6282] font-semibold text-center">Top Selling</h3>
         <h2
             class="volkhov text-[28px] sm:text-[30px] md:text-[40px] lg:text-[50px] text-[#14183E] text-center font-bold">
             Top Destinations</h2>
-        <div class="px-20 pb-32 pt-16 ">
+        <div class="max-lg:px-8 lg:px-20 max-lg:pb-24 lg:pb-32 max-lg:pt-10 lg:pt-16 ">
             <div class="swiper mobCardSwiper p-2 h-full">
                 <div class="swiper-wrapper ">
                     <div class="swiper-slide ">
@@ -266,19 +267,22 @@
 
                 <div class="text-[#14183E] mobcswiper-button-prev swiper-button-prev left-0 z-10  "></div>
                 <div class="text-[#14183E] mobcswiper-button-next swiper-button-next right-0 z-10 "></div>
-                <div class=" cswiper-pagination  flex flex-row gap-7 h-[20px] lg:opacity-0 text-center w-[20px] pt-10 text-[#14183E]"></div>
+                <div
+                    class=" cswiper-pagination  flex flex-row gap-7 h-[20px] lg:opacity-0 text-center w-[20px] pt-10 text-[#14183E]">
+                </div>
             </div>
         </div>
 
     </section>
 
-    <section class="container mx-auto px-20">
-        <div class="max-w-full lg:max-w-[560px] leading-tight text-center items-center justify-center md:text-center lg:text-left">
+    <section class="container mx-auto px-10 sm:px-16 md:px-20 lg:px-20 " id="Flights">
+        <div
+            class="max-w-full lg:max-w-[560px] leading-tight text-center items-center justify-center md:text-center lg:text-left">
             <h3 class="poppins text-[18px] text-[#5E6282] font-semibold ">Easy and Fast</h3>
             <h2 class="volkhov text-[28px] sm:text-[30px] md:text-[40px] lg:text-[50px] text-[#14183E]  font-bold">Book
                 Your Next Trip In 3 Easy Steps </h2>
         </div>
-        <div class="lg:flex  justify-between">
+        <div class="lg:flex  lg:justify-between ">
             <div class="flex flex-col lg:text-left text-center  ">
                 <div class="flex items-center  py-4 gap-5">
                     <div class=" max-lg:hidden flex items-center justify-center ">
@@ -317,7 +321,7 @@
 
 
             <div
-                class="flex-col flex -mt-[80px] max-lg:w-2/3 h-full max-lg:mt-5 mr-5 max-md:ml-[17%]  relative   rounded-[26px] lg:shadblue z-[10] ">
+                class="flex-col flex -mt-[80px] max-lg:w-2/3 h-full max-lg:mt-5 mr-5 max-md:ml-[17%]  relative max-md:items-center  rounded-[26px] lg:shadblue z-[10] ">
                 <img class=" p-6 object-cover rounded-[26px] w-full" src="images/greece.png" />
                 <p class="px-6 poppins text-[18px] font-medium">Trip To Greece</p>
                 <p class="px-6 py-3 poppins text-[#84829A]">14-29 June | by Robbin</p>
@@ -338,19 +342,20 @@
                         <p class="poppins text-[#84829A]">24 people going </p>
                     </div>
                     <div>
-                        <img src="images/heart.svg" />
+                        <img class="max-md:pl-3" src="images/heart.svg" />
                     </div>
                 </div>
 
-                <div class="rounded-[26px] h-full absolute  z[-100] shadbnb">
+                <div class="rounded-[26px] max-lg:h-full lg:h-full absolute  z[-100] shadbnb rblock">
                     <div class="px-6 py-1 gap-3 flex opacity-100">
                         <img class="  z-[-100] p-6 object-cover rounded-[26px] w-full" src="images/greece.png" />
                     </div>
                 </div>
 
-                <div class="rounded-[18px] bg-white shadblack max-lg:w-[80%] flex absolute max-md:justify-center items-center max-md:-bottom-36 max-md:right-[10%] md:bottom-14 md:-right-28">
-                    <img class="p-5" src="images/absicon.svg" />
-                    <div class="px-3 py-4 poppins">
+                <div
+                    class="rounded-[18px] bg-white shadblack max-md:w-[80%] flex max-md:relative md:absolute lg:absolute max-md:justify-center items-center md:bottom-14 md:-right-28">
+                    <img class="p-5 max-md:hidden" src="images/absicon.svg" />
+                    <div class="px-3 py-4 poppins max-md:flex max-md:flex-col max-md:items-center ">
                         <p class="text-[#84829A] font-medium">Ongoing</p>
                         <p class="font-medium text-[18px]">Trip to Rome</p>
                         <div class="flex gap-1">
@@ -366,7 +371,7 @@
     </section>
 
     <section
-        class=" gap-20 sectionSW h-full w-full py-[80px] px-[100px] flex flex-row max-lg:flex-col container mx-auto">
+        class=" gap-20 sectionSW h-full w-full py-[30px] px-16 lg:px-[100px] flex flex-row max-lg:flex-col container mx-auto">
         <div class="sectionBody max-w-[500px] ">
             <div class="swiper flex   mySwiper max-h-full  ">
                 <div class="swiper-wrapper max-h-[350px] max-lg:text-center ">
@@ -408,7 +413,9 @@
                     </div>
 
                 </div>
-                <div class="swiper-pagination flex max-lg:justify-center gap-7 h-[20px] text-center w-[20px] text-[#14183E]"></div>
+                <div
+                    class="swiper-pagination flex max-lg:justify-center gap-7 h-[20px] text-center w-[20px] text-[#14183E]">
+                </div>
             </div>
         </div>
 
@@ -445,16 +452,16 @@
                             <h4 class="text-[14px] text-[#5E6282]">Lahore, Pakistan</h4>
                         </div>
                     </div>
-                    
+
 
                 </div>
 
             </div>
             <div
-                class="text-[#14183E] swiper2-button-prev swiper-button-prev rotate-90 absolute right-[0%] left-[110%] top-[100px] ">
+                class="text-[#14183E] swiper2-button-prev swiper-button-prev rotate-90 absolute right-[0%] left-[102%] top-[100px] ">
             </div>
             <div
-                class="text-[#14183E] swiper2-button-next swiper-button-next rotate-90 absolute left-[110%] botom-[5px]">
+                class="text-[#14183E] swiper2-button-next swiper-button-next rotate-90 absolute left-[102%] botom-[5px]">
             </div>
         </div>
 
@@ -483,25 +490,25 @@
 
     </section>
 
-    <section class=" container mx-auto px-10 sm:px-12 md:px-16 lg:px-20  mb-24 ">
+    <section class=" container mx-auto px-10 sm:px-12 md:px-16 lg:px-20  mb-24 " id="Bookings">
         <div
             class=" relative z-[3] w-full rounded-tr-[px] rounded-r-[20px] rounded-b-[20px] rounded-tl-[129px]  bg-[#f7f5fe]">
             <img class=" max-xl:hidden absolute right-0 z-[4] top-[-35px]" src="images/tg77.svg" />
             <div class="overflow-hidden relative">
                 <h2
-                    class=" z[2]  px-8 pt-20 md:px-10 md:pt-16  lg:px-12 lg:pt-20 poppins font-semibold max-lg:font-semibold text-[20px] sm:text-[27px] md:text-[30px] lg:text-[33px] text-[#5E6282] text-center">
+                    class=" z[2]  px-8 pt-16 md:px-10 md:pt-16  lg:px-12 lg:pt-20 poppins font-semibold max-lg:font-semibold text-[20px] sm:text-[27px] md:text-[30px] lg:text-[33px] text-[#5E6282] text-center">
                     Subscribe to get information, latest news and other interesting offers about Jadoo
                 </h2>
                 <img class="absolute w-[250px] h-[90%] top-[55px] left-[40px] z-[1]" src="images/Mask decore.svg" />
                 <div class="flex justify-center items-center max-lg:flex-col p-14 gap-6">
                     <div
-                        class="p-6 z-[5] bg-[#ffffff] flex  items-center rounded-[8px] gap-4 max-lg:w-full w-[40%] text-[#39425D]">
+                        class="max-sm:p-2 p-5 z-[5] bg-[#ffffff] flex  items-center rounded-[8px] gap-4 max-lg:w-full w-[40%] text-[#39425D]">
                         <span><img src="images/mail.svg" /></span>
                         <input class=" h-full w-full outline-none placeholder-[#39425D]" type="search"
                             src="images/mail.svg" placeholder="Your email" />
                     </div>
                     <button
-                        class=" hover:bg-[#000] max-lg:w-1/3 justify-center flex items-center  opensans font-semibold px-16 py-6 bg-gradient-to-t from-[#FF946D] to-[#FF7D68] text-white rounded-[10px]">
+                        class=" hover:bg-[#000] max-lg:w-1/3 justify-center flex items-center  opensans font-semibold px-14 py-4 bg-gradient-to-t from-[#FF946D] to-[#FF7D68] text-white rounded-[10px]">
                         Subscribe
                     </button>
                 </div>
@@ -509,25 +516,19 @@
     </section>
 
     <footer class="container mx-auto px-6 md:px-20 ">
-        <div class="  flex  md:flex-row items-baseline justify-between max-lg:flex-wrap gap-y-12  pb-10 md:pb-20">
+        <div class="  flex  md:flex-row items-baseline justify-center max-lg:flex-wrap gap-y-12  pb-10 md:pb-20">
             <div class="max-w-[160px] max-xl:hidden">
                 <h2 class="text-[32px] md:text-[44px] poppins text-[#181E4B]"> Jadoo</h2>
                 <p class="poppins text-[#5E6282] text-[13px]">Book your trip in minute, get full Control for much longer
                 </p>
             </div>
 
-            <div class="w-full md:max-w-[600px] flex  md:flex-row justify-center items-center gap-x-8 ">
+            <div class="w-full md:max-w-[600px] flex  md:flex-row justify-center items-center gap-x-7 ">
                 <div class="flex items-center flex-col text-center  poppins">
                     <h4 class="p-3 font-bold text-[#080809] text-[21px]">Company</h4>
                     <p class="text-[#5e6282] text-[18px]">About</p>
                     <p class="text-[#5e6282] text-[18px]">Careers</p>
                     <p class="text-[#5e6282] text-[18px]">Mobile</p>
-                </div>
-                <div class="flex items-center flex-col text-center  poppins">
-                    <h4 class="p-3 font-bold text-[#080809] text-[21px]">Contact</h4>
-                    <p class="text-[#5e6282] text-[18px]">Help/FAQ</p>
-                    <p class="text-[#5e6282] text-[18px]">Press</p>
-                    <p class="text-[#5e6282] text-[18px]">Affiliates</p>
                 </div>
                 <div class="flex items-center flex-col text-center  poppins max-sm:hidd">
                     <h4 class="p-3 font-bold text-[#080809] text-[21px]">More</h4>
@@ -535,9 +536,16 @@
                     <p class="text-[#5e6282] text-[18px]">Airline</p>
                     <p class="text-[#5e6282] text-[18px]"><span class="max-sm:hidden">Low fare</span> tips</p>
                 </div>
+                <div class="flex items-center flex-col text-center  poppins">
+                    <h4 class="p-3 font-bold text-[#080809] text-[21px]">Contact</h4>
+                    <p class="text-[#5e6282] text-[18px]">Help/FAQ</p>
+                    <p class="text-[#5e6282] text-[18px]">Press</p>
+                    <p class="text-[#5e6282] text-[18px]">Affiliates</p>
+                </div>
+
             </div>
 
-            <div class="flex flex-col items-center max-lg:left-1/3 gap-4 relative">
+            <div class="flex flex-col items-center  gap-4 relative">
                 <div class="flex justify-around items-center gap-6">
                     <button class="custom-button rounded-full shadi p-2"><img class="w-[20px] h-[20px] shadi"
                             src="images/Facebook Icon.svg" alt="facebook"></button>
@@ -580,7 +588,7 @@
                 nextEl: ".mobswiper-button-next",
                 prevEl: ".mobswiper-button-prev",
             },
-            
+
             breakpoints: {
                 640: {
                     slidesPerView: 2,
@@ -621,7 +629,7 @@
                     spaceBetween: 30,
                 },
                 1024: {
-                    
+
                     slidesPerView: 3,
                     spaceBetween: 50,
                 },
@@ -658,7 +666,7 @@
                 nextEl: ".swiper2-button-next",
                 prevEl: ".swiper2-button-prev",
             },
-            loop:true,
+            loop: true,
         });
     </script>
 
@@ -693,11 +701,13 @@
 
     <script>
         function openSidebar() {
-            document.getElementById('mySidebar').classList.remove('-translate-x-full');
+            document.getElementById('mySidebar').classList.remove('translate-x-full');
+            document.getElementById('mySidebar').classList.add('translate-x-0');
         }
 
         function closeSidebar() {
-            document.getElementById('mySidebar').classList.add('-translate-x-full');
+            document.getElementById('mySidebar').classList.remove('translate-x-0');
+            document.getElementById('mySidebar').classList.add('translate-x-full');
         }
     </script>
 
